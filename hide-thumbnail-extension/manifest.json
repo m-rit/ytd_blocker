@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Hide YouTube Thumbnails and Comments",
+  "version": "1.0",
+  "description": "An extension to hide YouTube thumbnails and comments.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
